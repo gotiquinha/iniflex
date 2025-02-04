@@ -1,6 +1,6 @@
 # Teste Prático - Sistema de Gerenciamento de Funcionários
 
-Este é um projeto Java simples que demonstra operações básicas de gerenciamento de funcionários.
+Este é um projeto Java que demonstra operações básicas de gerenciamento de funcionários.
 
 ## Requisitos
 
