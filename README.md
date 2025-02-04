@@ -1,6 +1,6 @@
-# Teste Prático - Sistema de Gerenciamento de Funcionários
+# Sistema de Gerenciamento de Funcionários
 
-Este é um projeto Java que demonstra operações básicas de gerenciamento de funcionários.
+Sistema simples em Java para gerenciamento de funcionários, incluindo operações de cadastro, remoção, listagem e cálculos salariais.
 
 ## Requisitos
 
@@ -8,13 +8,24 @@ Este é um projeto Java que demonstra operações básicas de gerenciamento de f
 
 ## Como executar
 
-1. Clone o repositório
-2. Navegue até a pasta do projeto
-3. Compile e execute o projeto usando sua IDE favorita ou via linha de comando:
-
+1. Clone o repositório:
 ```bash
-javac src/main/java/model/*.java src/main/java/Principal.java
-java -cp src/main/java Principal
+git clone [URL_DO_SEU_REPOSITORIO]
+```
+
+2. Entre na pasta do projeto:
+```bash
+cd [NOME_DO_REPOSITORIO]
+```
+
+3. Compile os arquivos:
+```bash
+javac Principal.java Funcionario.java Pessoa.java
+```
+
+4. Execute o programa:
+```bash
+java Principal
 ```
 
 ## Funcionalidades
@@ -23,17 +34,17 @@ O programa implementa as seguintes funcionalidades:
 
 1. Cadastro de funcionários
 2. Remoção de funcionário específico
-3. Listagem de funcionários com formatação específica
-4. Aumento de salário
+3. Listagem de funcionários com formatação específica (data: dd/mm/aaaa, valor numérico com separadores)
+4. Aumento de 10% nos salários
 5. Agrupamento por função
 6. Listagem de aniversariantes de outubro e dezembro
 7. Identificação do funcionário mais velho
 8. Ordenação alfabética
-9. Cálculo do total de salários
+9. Cálculo do total dos salários
 10. Cálculo de salários mínimos por funcionário
 
 ## Estrutura do Projeto
 
-- `src/main/java/model/Pessoa.java`: Classe base com atributos básicos
-- `src/main/java/model/Funcionario.java`: Classe que estende Pessoa com atributos específicos
-- `src/main/java/Principal.java`: Classe principal com a lógica de negócio 
+- `Pessoa.java`: Classe base com atributos nome e data de nascimento
+- `Funcionario.java`: Classe que estende Pessoa, com atributos salário e função
+- `Principal.java`: Classe principal com a lógica de negócio 
